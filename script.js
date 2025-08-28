@@ -50,3 +50,11 @@ function updateCurrentSection() {
 }
 
 document.addEventListener("scroll", updateCurrentSection);
+
+function toggleNav() {
+    const navIcon = document.querySelector('.nav_icon');
+    const mobileMenu = document.querySelector('.mobile_menu');
+    navIcon.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+}
+

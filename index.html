@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Jakub Dryja</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
     <section id="header">
-        <div class="tittle">
-            <div class="text_container">
-                <p>Hello! I'm</p>
-                <h1>Jakub Dryja</h1>
-            </div>
-            <!-- <div class="image_container">
-                <img src="assets/IMG_6601.jpeg">
-            </div> -->
+        <div class="header_tittle">
+            <p>Hello! I'm</p>
+            <h1>Jakub Dryja</h1>
         </div>
-        <div class="tittle_buttons">
-            <button class="button-1" role="button">Download CV</button>
+        <div class="header_button">
+            <button class="button-1 main_button" role="button">Download CV</button>
+        </div>
+        <div class="tittle_icons">
+            <a href="https://github.com/qdryja"><img src="assets/github.png"></a>
+            <a href="https://www.linkedin.com/in/jakub-dryja-3ba047381/"><img src="assets/linkedin.png"></a>
         </div>        
     </section>
 
@@ -36,14 +35,55 @@
             </ul>
         </div>
     </nav>
-    <section id="about">
 
+    <nav id="mobile_nav">
+        <a href="javascript:void(0)" class="nav_icon" onclick="toggleNav()">
+            <div class="hamburger_line"></div>
+            <div class="hamburger_line"></div>
+            <div class="hamburger_line"></div>
+        </a>
+        <div class="mobile_menu">
+            <ul>
+                <li><a href="#about" onclick="toggleNav()">About Me</a></li>
+                <li><a href="#education" onclick="toggleNav()">Education</a></li>
+                <li><a href="#projects" onclick="toggleNav()">Projects</a></li>
+                <li><a href="#skills" onclick="toggleNav()">Skills</a></li>
+                <li><a href="#contact" onclick="toggleNav()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">        
+        <div class="about_img">
+            <img src="assets/me.png">
+        </div> 
         <div class="about_container">
-            <div class="about_img">
-                <img src="assets/IMG_6601.jpeg">
-            </div>    
-            <div class="about_text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p>
+                I recently graduated with a Bachelor of Science in Computer Science, 
+                a field I've been passionate about for years. I'm eager to apply my 
+                academic knowledge to real-world problems and embark on new challenges. 
+                My educational journey has equipped me with a strong foundation in 
+                software development, data structures, and algorithms, and I'm a firm 
+                believer in the power of continuous learning. I'm excited to join an 
+                innovative team where I can grow my skills, contribute to meaningful 
+                projects, and face the exciting challenges ahead.
+            </p>
+            <div class="horizontal_line"></div>
+            <div class="about_section_2">
+                <div class="about_sec_text">
+                    <p>
+                    From a young age, I was deeply involved in sports, which instilled 
+                    in me a disciplined and persistent approach to life. It taught me the 
+                    importance of hard work, teamwork and the 
+                    resilience needed to overcome obstacles. These qualities have been 
+                    instrumental in my academic and personal life, teaching me to always 
+                    aim high and push past my limits. This drive and determination are 
+                    what I bring to every project, ensuring I'm always striving for 
+                    progress and excellence.
+                    </p>
+                    <div class="horizontal_line"></div>
+                </div>
+                <img src="assets/tennis.jpg">
             </div>
         </div>
     </section>
@@ -56,9 +96,14 @@
                     <h3>Education in Poland</h3>
                     <p>... - 2021</p>
                     <p>Bydgoszcz, Poland</p>
-                </div>
+                </div>  
                 <div class="edu_descr">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <p>Since my early education, I have been passionate 
+                        about science-related subjects and eager to deepen 
+                        my knowledge. I actively took part in numerous 
+                        mathematics and IT competitions, earning high 
+                        placements and several scholarships that further motivated me 
+                        to continue excelling in my academic journey.</p>
                 </div>
             </div>
             <div class="edu_ams">
@@ -70,11 +115,17 @@
                     <p>Vrije Universiteit Amsterdam</p>
                 </div>
                 <div class="edu_descr">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <p>In July 2025 I graduated with a Bachelor’s degree in Computer Science 
+                        from Vrije Universiteit Amsterdam. 
+                        The program’s wide scope of courses allowed me to 
+                        deepen my knowledge across various fields of 
+                        Computer Science, ranging from theoretical foundations 
+                        to practical applications. Over the course of my studies, 
+                        I maintained a GPA of 7.5/10, reflecting consistent 
+                        performance and dedication throughout the program.</p>
                 </div>
                 <div class="ams_buttons">
-                    <button class="button-1" role="button">Grade List</button>
-                    <button class="button-1" role="button">Degree</button>    
+                    <button class="button-1" onclick="window.open('./assets/grade_list.pdf')">Grade List</button>
                 </div>
                 
             </div>
@@ -82,12 +133,17 @@
                 <div class="edu_leiden_info">
                     <img src="assets/leiden.png">
                     <h3>M Computer Science</h3>
-                    <p>2025 - ...</p>
+                    <p>2026 - ...</p>
                     <p>Leiden, The Netherlands</p>
                     <p>Universiteit Leiden</p> 
                 </div>
                 <div class="edu_descr">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <p>In February 2026, I will begin my Master’s degree in 
+                        Computer Science at Universiteit Leiden, specializing 
+                        in Data Science. Through this program, I aim to 
+                        strengthen my expertise in data-driven technologies, 
+                        machine learning, and advanced computational methods.
+                    </p>
                 </div>
             </div>
         </div>
@@ -102,31 +158,28 @@
                         <img src="assets/python.png">
                     </div>
                     <div class="bachelor_descr">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                        <p class="p_left">This is my most recent and most significant project, 
+                            which I’m very proud of. I focused on predicting ATP tennis 
+                            match outcomes using advanced machine learning techniques. The work 
+                            involved collecting and cleaning decades of match data, 
+                            engineering performance-driven features, and experimenting with 
+                            multiple predictive models. Following extensive fine-tuning and validation, 
+                            the model not only achieved high predictive accuracy on Grand Slam tournaments 
+                            between 2010–2024 but also, when combined with strategic betting approaches, 
+                            consistently outperformed bookmaker odds. This project not only deepened my 
+                            expertise in data science 
+                            and model optimization but also strengthened my ability to connect 
+                            technical results with real-world applications.
+                        </p>
                         <div class="project_buttons">
-                            <img src="assets/github.png">
-                            <button class="button-1" role="button">Thesis</button>   
+                            <a href="https://github.com/qdryja/Data-Driven-Prediction-of-ATP-Tennis"><img src="assets/github.png"></a>
+                            <button class="button-1" onclick="window.open('./assets/thesis.pdf')">Thesis</button>   
                         </div>
                     </div>
                     
                 </div>
             </div>
             <div class="minor_projects">
-                <div class="bordered_container project_container">
-                    <div class="project_tittle">
-                        <h3>Market Value</h3>
-                        <h4>Data Wrangling Course</h4>
-                        <p>2024</p>
-                    </div>
-                    <div class="project_icons">
-                        <img src="assets/python.png">
-                        <img src="assets/2.png">
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <div class="project_buttons">
-                        <img src="assets/github.png">   
-                    </div>
-                </div>
                 <div class="bordered_container project_container">
                     <div class="project_tittle">
                         <h3>SecChat</h3>
@@ -136,11 +189,14 @@
                     <div class="project_icons">
                         <img src="assets/c.png">
                         <img src="assets/python.png">
-                        <img src="assets/1.png">
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p class="p_left">In a group of two, we designed and built a secure chat application on Linux 
+                        using C and Python. The project implemented core secure distributed application 
+                        principles and various cryptographic techniques, including OpenSSL for 
+                        secure communication and salted password hashing for user authentication. 
+                    </p>
                     <div class="project_buttons">
-                        <img src="assets/github.png">   
+                        <a href="https://github.com/jaydoncheng/SecureProgramming"><img src="assets/github.png"></a>   
                     </div>  
                 </div>
                 <div class="bordered_container project_container">
@@ -151,12 +207,42 @@
                     </div>
                     <div class="project_icons">
                         <img src="assets/java.png">
-                        <img src="assets/2.png">
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p class="p_left">
+                        In a group of four, we designed and developed an interactive and responsive Tamagotchi-like 
+                        application in Java. The project focused on applying core software design principles, 
+                        including object-oriented programming, to create a clean, maintainable, and scalable 
+                        codebase. This project was a practical 
+                        exercise in collaborative development and solidified my understanding of how to translate a concept 
+                            into a functional and well-structured software product.
+                    </p>
                     <div class="project_buttons">
-                        <img src="assets/github.png"> 
-                        <button class="button-1" role="button">Demo</button> 
+                        <a href="https://github.com/AGuerenaGonzalez/Software-Design-Team8"><img src="assets/github.png"></a> 
+                        <button class="button-1" onclick="location.href='https://youtu.be/mz15qYM2lHo?si=EQxWmGDB3gsWE-0p'">Demo</button> 
+                    </div>
+                </div>
+                <div class="bordered_container project_container">
+                    <div class="project_tittle">
+                        <h3>Gesture Recognition</h3>
+                        <h4>Pervasive Computing Course</h4>
+                        <p>2021</p>
+                    </div>
+                    <div class="project_icons">
+                        <img src="assets/python.png">
+                        <img src="assets/java.png">
+                    </div>
+                    <p class="p_left">
+                        This collaborative project developed a prototype for a remote 
+                        control that operates with hand gestures. Implemented using Python 
+                        and Java, the system's 
+                        objective was to improve the way users interact with smart 
+                        systems and appliances. The prototype functions by using a 
+                        computer's built-in camera to capture and process gestures in 
+                        real-time, enabling it to recognize predefined commands.
+                    </p>
+                    <div class="project_buttons">
+                        <a href="https://github.com/TheSubliminalVerses/VU_Gesture_Recognition_Project"><img src="assets/github.png"></a>   
+                        <button class="button-1" onclick="window.open('./assets/PC_report.pdf')">Report</button>
                     </div>
                 </div>
             </div>
@@ -167,33 +253,35 @@
             <div class="skill_box">
                 <h3>Programming Languages</h3>
                 <div class="horizontal_line"></div>
-                <div class="programming_container">
-                    <div class="programming_column">
-                        <div class="check">
-                            <img src="assets/check.png">
-                            <p>Python</p>
-                        </div>
-                        <div class="check">
-                            <img src="assets/check.png">
-                            <p>C</p>
-                        </div>
-                        <div class="check">
-                            <img src="assets/check.png">
-                            <p>C++</p>
-                        </div>
-                    </div>    
-                    <div class="programming_column">
-                        <div class="check">
-                            <img src="assets/check.png">
-                            <p>Java</p>
-                        </div>
-                        <div class="check">
-                            <img src="assets/check.png">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="check">
-                            <img src="assets/check.png">
-                            <p>Bash</p>
+                <div class="checks_container">
+                    <div class="programming_container">
+                        <div class="programming_column">
+                            <div class="check">
+                                <img src="assets/check.png">
+                                <p>Python</p>
+                            </div>
+                            <div class="check">
+                                <img src="assets/check.png">
+                                <p>C</p>
+                            </div>
+                            <div class="check">
+                                <img src="assets/check.png">
+                                <p>C++</p>
+                            </div>
+                        </div>    
+                        <div class="programming_column">
+                            <div class="check">
+                                <img src="assets/check.png">
+                                <p>Java</p>
+                            </div>
+                            <div class="check">
+                                <img src="assets/check.png">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="check">
+                                <img src="assets/check.png">
+                                <p>Bash</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -201,67 +289,89 @@
             <div class="skill_box">
                 <h3>Web Development</h3>
                 <div class="horizontal_line"></div>
-                <div class="check">
-                    <img src="assets/check.png">
-                    <p>HTML</p>
-                </div>
-                <div class="check">
-                    <img src="assets/check.png">
-                    <p>CSS</p>
+                <div class="checks_container">
+                    <div class="check">
+                        <img src="assets/check.png">
+                        <p>HTML</p>
+                    </div>
+                    <div class="check">
+                        <img src="assets/check.png">
+                        <p>CSS</p>
+                    </div>
                 </div>
             </div>
             <div class="skill_box">
-                <h3>Databases & Tools</h3>
+                <h3>Developer Tools</h3>
                 <div class="horizontal_line"></div>
-                <div class="check">
-                    <img src="assets/check.png">
-                    <p>Git</p>
-                </div>
-                <div class="check">
-                    <img src="assets/check.png">
-                    <p>MySQL</p>
+                <div class="checks_container">
+                    <div class="check">
+                        <img src="assets/check.png">
+                        <p>Git</p>
+                    </div>
+                    <div class="check">
+                        <img src="assets/check.png">
+                        <p>MySQL</p>
+                    </div>
                 </div>
             </div>
             <div class="skill_box">
                 <h3>Operating Systems</h3>
                 <div class="horizontal_line"></div>
-                <div class="check">
-                    <img src="assets/check.png">
-                    <p>Linux</p>
-                </div>
-                <div class="check">
-                    <img src="assets/check.png">
-                    <p>Windows</p>
+                <div class="checks_container">
+                    <div class="check">
+                        <img src="assets/check.png">
+                        <p>Linux</p>
+                    </div>
+                    <div class="check">
+                        <img src="assets/check.png">
+                        <p>Windows</p>
+                    </div>
                 </div>
             </div>
             <div class="skill_box">
                 <h3>Productivity</h3>
                 <div class="horizontal_line"></div>
-                <div class="check">
-                    <img src="assets/check.png">
-                    <p>Microsoft Excel</p>
-                </div>
-                <div class="check">
-                    <img src="assets/check.png">
-                    <p>Creating clean and effective reports</p>
+                    <div class="checks_container">
+                    <div class="check">
+                        <img src="assets/check.png">
+                        <p>Microsoft Excel</p>
+                    </div>
+                    <div class="check">
+                        <img src="assets/check.png">
+                        <p>Creating clean and effective reports</p>
+                    </div>
                 </div>
             </div>
             <div class="skill_box">
                 <h3>Languages</h3>
                 <div class="horizontal_line"></div>
-                <div class="check">
-                    <img src="assets/check.png">
-                    <p>English - C1</p>
+                    <div class="checks_container">
+                        <div class="check">
+                            <img src="assets/check.png">
+                            <p>Polish - Native</p>
+                        </div>
+                        <div class="check">
+                            <img src="assets/check.png">
+                            <p>English - C1</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="contact">
-
-        <div class="education_container">
-
+        <div class="contact_container bordered_container">
+            <img src="assets/mail.png">
+            <p><a href="mailto:jk.dryja@gmail.com">jk.dryja@gmail.com</a></p>
+        </div>
+        <div class="bordered_container contact_container">
+            <img src="assets/linkedin.png">
+            <p><a href="https://www.linkedin.com/in/jakub-dryja-3ba047381/">LinkedIn</a></p>
         </div>
     </section>
+    <footer>
+        <p>Copyright © 2025 Jakub Dryja. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
