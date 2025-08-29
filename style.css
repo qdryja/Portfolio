@@ -179,7 +179,7 @@ nav {
 #about {
     min-height: 88vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
@@ -229,6 +229,8 @@ nav {
 #education {
     min-height: 88vh;
     padding-bottom: 5rem;
+    display: flex;
+    align-items: center;
 }
 
 #education img {
@@ -246,7 +248,7 @@ nav {
 
 .edu_pl {
     text-align: center;
-    width: 23rem;
+    width: 27%;
 }
 
 .edu_pl_info {
@@ -262,7 +264,7 @@ nav {
 
 .edu_ams {
     text-align: center;
-    width: 25rem;
+    width: 30%;
 }
 
 .edu_ams_info {
@@ -284,7 +286,7 @@ nav {
 
 .edu_leiden {
     text-align: center;
-    width: 23rem;
+    width: 27%;
 }
 
 .edu_leiden_info {
@@ -327,8 +329,8 @@ nav {
 
 .bachelor_project {
     display: flex;
-    justify-content: center;
-    width: 60vw ;
+    justify-content: space-between;
+    width: 60vw;
     min-height: 40vh;
     padding: 1rem;
 }
@@ -339,7 +341,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    width: 35%;
+    width: 30%;
 }
 
 .project_buttons {
@@ -393,8 +395,9 @@ nav {
 
 .project_icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-top: 0.5rem;
     gap: 1rem;
 }
 
@@ -417,7 +420,7 @@ nav {
     flex-direction: column;
     align-items: center; 
     gap: 0.5rem;
-    width: 17rem;
+    width: 29%;
     height: fit-content;
     margin-top: 0.5rem;
 }

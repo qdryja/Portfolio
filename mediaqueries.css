@@ -262,3 +262,120 @@
         font-size: 0.8rem;
     }
 }
+
+@media (min-width: 1920px) {
+    p {
+        font-size: 1.7rem;
+    }
+
+    .bordered_container {
+        border-radius: 3rem;
+        border: #a650d7 0.2rem solid;
+    }
+
+    .horizontal_line{
+        height: 3px;
+    }
+
+    .button-1 {
+        height: 5rem;
+        font-size: 2rem;
+        border-radius: 42px;
+    }
+
+    #header p{
+        font-size: 6rem;
+    }
+
+    #header img {
+        height: 7rem;
+        padding-top: 1rem;
+    }
+
+    .main_button {
+        font-size: 3.5rem;
+        border-radius: 54px;
+    }
+
+    h1 {
+        font-size: 15rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    .nav_links {
+        display: flex;
+        gap: 2.5rem;
+        list-style: none;
+        font-size: 2.8rem;
+    }
+    #current-section p {
+        font-size: 2rem;
+    }
+    #current-section h3 {
+        font-size: 3rem;
+    }
+    #about {
+        justify-content: center;
+    }
+    .about_img img {
+    height: 36rem;
+    }
+    .about_section_2 img {
+        height: 20rem;  
+    }
+
+    #education img {
+        height: 6rem;
+    }
+    #education img {
+        height: 6rem;
+    }
+
+    .bachelor_project {
+        width: 70vw;
+        min-height: 50vh;
+        padding: 2rem;
+    }
+
+    .bachelor_info {
+        gap: 4rem;
+    }
+
+    .project_buttons img {
+        height: 4rem;
+    }
+
+    .project_icons img {
+        height: 2.8rem;
+    }
+
+    .skill_box h3{
+        font-size: 3rem;
+    }
+
+    .skill_box p{
+        font-size: 2.3rem;
+    }
+
+    .skill_box img {
+        height: 1.5rem;
+    }
+
+    .contact_container img{
+        height: 5rem;
+    }
+    .contact_container p {
+        font-size: 5rem;
+    }
+}
